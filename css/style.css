@@ -72,7 +72,6 @@ h5 {
   padding-right: 10%;
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -87,7 +86,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -158,10 +156,13 @@ a {
 .flex-box {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 10px;
+}
+
+.flex-box li {
+  margin-right: 25px;
 }
 
 .center-content {
