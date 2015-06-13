@@ -149,6 +149,12 @@ var education = {
 			"url" : "http://www.coursera.org"
 		},
 		{
+			"title" : "Justice",
+			"school" : "Harvard University - edX",
+			"date" : 2013,
+			"url" : "http://edX.org"
+		},
+		{
 			"title" : "CS50X: Introduction to Computer Science",
 			"school" : "Harvard University - edX",
 			"date" : 2014,
@@ -234,13 +240,7 @@ var projects = {
 							" was tasked with writing Jasmine tests to ensure the" +
 							" functionality of the app works as anticipated.",
 			"image" : "images/jasmine-tests-screenshot.png"
-		},
-		{
-			"title" : "My Wiki",
-			"dates" : "2014",
-			"description" : "I built a wiki where users can sign in, edit pages, and view pages. I utilized Google AppEngine, Datastore, and Python's Jinja2 templating framework.",
-			"image" : "http://placekitten.com/483/280" // TODO: fancify the wiki and add screenshot
-		},
+		}
 	],
 
 	display : function() {

@@ -13,7 +13,15 @@
 .project-entry {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.project-entry {
   width: 30%;
+}
+
+.education-entry,
+.work-entry {
+  width: 80%;
 }
 
 #projects {
@@ -234,15 +242,22 @@ small {
   #letsConnect {
     margin-top: 10%;
   }
+
   .biopic {
     width: 150px;
   }
+
   .welcome-message {
     display: none;
   }
 
   #projects {
     display: block;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: initial;
   }
 
   .work-entry,
