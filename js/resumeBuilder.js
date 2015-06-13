@@ -134,37 +134,37 @@ var education = {
 			"title" : "Introduction to Interactive Programming in Python",
 			"school" : "Rice University - Coursera",
 			"date" : 2012,
-			"url" : "http://www.coursera.org"
+			"url" : "https://www.coursera.org/course/interactivepython1"
 		},
 		{
 			"title" : "Introduction to Logic",
 			"school" : "Stanford University - Coursera",
 			"date" : 2012,
-			"url" : "http://www.coursera.org"
+			"url" : "https://www.coursera.org/course/intrologic"
 		},
 		{
 			"title" : "Microeconomics Principles",
 			"school" : "University of Illinois - Coursera",
 			"date" : 2013,
-			"url" : "http://www.coursera.org"
+			"url" : "https://www.coursera.org/course/microecon"
 		},
 		{
 			"title" : "Justice",
 			"school" : "Harvard University - edX",
 			"date" : 2013,
-			"url" : "http://edX.org"
+			"url" : "https://www.edX.org/course/justice-harvardx-er22-1x"
 		},
 		{
 			"title" : "CS50X: Introduction to Computer Science",
 			"school" : "Harvard University - edX",
 			"date" : 2014,
-			"url" : "http://www.edX.org"
+			"url" : "https://www.edX.org/course/introduction-computer-science-harvardx-cs50x"
 		},
 		{
 			"title" : "Web Development",
 			"school" : "Udacity",
 			"date" : 2014,
-			"url" : "http://www.udacity.com"
+			"url" : "https://www.udacity.com/course/web-development--cs253"
 		}
 	],
 
@@ -191,14 +191,12 @@ var education = {
 		$('.education-entry:last').append(HTMLonlineClasses);
 
 		for (var i = 0; i < coursesLen; i++) {
-			var formattedTitle = HTMLonlineTitle.replace('%data%', education.onlineCoursework[i].title),
+			var formattedTitle = HTMLonlineTitle.replace('%data%', education.onlineCoursework[i].title).replace('#', education.onlineCoursework[i].url),
 				formattedSchool = HTMLonlineSchool.replace('%data%', education.onlineCoursework[i].school),
-				formattedDates = HTMLonlineDates.replace('%data%', education.onlineCoursework[i].date),
-				formattedURL = HTMLonlineURL.replace('%data%', education.onlineCoursework[i].url).replace('#', education.onlineCoursework[i].url);
+				formattedDates = HTMLonlineDates.replace('%data%', education.onlineCoursework[i].date);
 
 			$('.education-entry:last').append(formattedTitle + formattedSchool);
 			$('.education-entry:last').append(formattedDates);
-			$('.education-entry:last').append(formattedURL);
 		}
 	}
 };
