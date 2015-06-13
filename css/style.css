@@ -25,7 +25,9 @@
 }
 
 #projects {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -149,13 +151,16 @@ a {
 }
 
 #expo {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .flex-box {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
