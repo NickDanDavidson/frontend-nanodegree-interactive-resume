@@ -209,6 +209,7 @@ var projects = {
 			"description" : "With this project, I built an arcade game inspired by the classic" +
 							" Frogger using the HTML5 Canvas and Object-Oriented JavaScript" +
 							" programming principles.",
+			"url" : "https://nickdandavidson.github.io/frontend-nanodegree-arcade-game-clone",
 			"image" : "images/arcade-game-screenshot.png"
 		},
 		{
@@ -221,6 +222,7 @@ var projects = {
 							" its frame speed to under 60fps (frames per second), utilizing" +
 							" knowledge and Chrome DevTools measurements for scripting, layout," +
 							" painting, and compositing.",
+			"url" : "https://nickdandavidson.github.io/frontend-nanodegree-website-optimization",
 			"image" : "images/mobile-pagespeed-screenshot.png"
 		},
 		{
@@ -229,6 +231,7 @@ var projects = {
 			"description" : "In this project, I built a single-page app that utilized the" +
 							" Google Maps API and the Wikipedia API to request information" +
 							" for places in my neighborhood.",
+			"url" : "https://nickdandavidson.github.io/frontend-nanodegree-neighborhood-map-app",
 			"image" : "images/neighborhood-map-screenshot.png"
 		},
 		{
@@ -237,6 +240,7 @@ var projects = {
 			"description" : "For this project I was given a feed reader application and" +
 							" was tasked with writing Jasmine tests to ensure the" +
 							" functionality of the app works as anticipated.",
+			"url" : "https://nickdandavidson.github.io/frontend-nanodegree-feed-reader-testing",
 			"image" : "images/jasmine-tests-screenshot.png"
 		}
 	],
@@ -248,7 +252,7 @@ var projects = {
 			$('#projects').append(HTMLprojectStart);
 			$('.project-entry').hide();
 
-			var formattedTitle = HTMLprojectTitle.replace('%data%', projects.projects[i].title),
+			var formattedTitle = HTMLprojectTitle.replace('%data%', projects.projects[i].title).replace('#', projects.projects[i].url),
 				formattedDates = HTMLprojectDates.replace('%data%', projects.projects[i].dates),
 				formattedDescription = HTMLprojectDescription.replace('%data%', projects.projects[i].description),
 				formattedImage = HTMLprojectImage.replace('%data%', projects.projects[i].image);
