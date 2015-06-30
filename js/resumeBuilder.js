@@ -10,7 +10,7 @@ var bio = {
 	},
 	"welcomeMessage" : "Thank you for visiting my Résumé!",
 	"skills" : ["HTML/CSS", "JavaScript/jQuery", "Python", "C", "KnockoutJS", "Gulp"],
-	"biopic" : "images/profile2-thumbnail.jpg",
+	"biopic" : "images/profile2.jpg",
 	display : function() {
 		var formattedName = HTMLheaderName.replace('%data%', bio.name),
 			formattedRole = HTMLheaderRole.replace('%data%', bio.role),
